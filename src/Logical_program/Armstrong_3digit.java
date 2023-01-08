@@ -4,24 +4,24 @@ public class Armstrong_3digit
 {
 public static void main(String[] args) 
  {
-	int a = 153;
-	int b = a;
-	int sum = 0;
-	int c;
+	int reminder = 0;
+	int reverse = 0;
+	int number = 153;
+	int ans = number;
 	
-	while (a>0) 
+	while (number>0) 
 	{
-	  c = a%10;
-	  sum = sum + c*c*c;
-	  a = a/10;
+		reminder = number%10;   
+		reverse = reverse + (reminder*reminder*reminder);
+		number = number/10; 
 	}
-	if (b==sum)
+	if (ans==reverse)
 	{
-		System.out.println(b +" is Armstrong Number");
+		System.out.println(ans +" is Armstrong Number");
 	}
 	else
 	{
-		System.out.println(b +" is Not Armstrong Number");
+		System.out.println(ans +" is Not Armstrong Number");
 	}
  }	
 }
@@ -30,3 +30,5 @@ public static void main(String[] args)
 // 153 = (1*1*1)+(5*5*5)+(3*3*3)
 // 1634 = (1*1*1*1)+(6*6*6*6)+(3*3*3*3)+(4*4*4*4)
 // power of number of digits
+
+

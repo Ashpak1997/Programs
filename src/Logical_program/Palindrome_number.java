@@ -3,23 +3,29 @@ package Logical_program;  //121 = 121 (After reverse)
 public class Palindrome_number 
 {
 public static void main(String[] args) 
-{
-  int a = 122;
-  int temp = a;  // fix the value
-  int rev=0,rem;
-  while(temp != 0)
-    {
-	  rem = temp%10;
-	  rev=rev*10+rem;
-	  temp=temp/10;
-    }
-  if(a==rev)
-   {
-	  System.out.println(a+ " Number is Palindrome number");
-   }
-  else
-   {
-	  System.out.println(a+" Number is Not Palindrome number");
-   }
-} 
+	 {
+		int reminder = 0;
+		int reverse = 0;
+		int number = 121;
+		int ans = number;
+		
+		while (number>0) 
+		{
+			reminder = number%10;   
+			reverse = reverse*10+reminder;
+			number = number/10; 
+		}
+		if (ans==reverse)
+		{
+			System.out.println(ans +" is Palindrome_number");
+		}
+		else
+		{
+			System.out.println(ans +" is Not Palindrome_number");
+		}
+	 }	 
 }
+
+
+
+
